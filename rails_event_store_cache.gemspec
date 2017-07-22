@@ -1,10 +1,10 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'rails_event_store_mongoid/version'
+require 'rails_event_store_cache/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rails_event_store_mongoid"
+  spec.name          = "rails_event_store_cache"
   spec.version       = RailsEventStoreMongoid::VERSION
   spec.authors       = ['gottfrois', 'mpraglowski']
   spec.email         = ['tomek.rybka@gmail.com', 'm@praglowski.com']
@@ -23,9 +23,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec"
 
-  spec.add_dependency 'mongoid', '>= 5.1'
-  spec.add_dependency 'ruby_event_store', '~> 0.13'
-  spec.add_dependency 'rails_event_store', '~> 0.14'
-  spec.add_dependency 'activesupport', '>= 3.0'
-  spec.add_dependency 'activemodel', '>= 3.0'
+  
 end
