@@ -20,6 +20,11 @@ module RailsEventStoreCache
 
       event
     end
+    
+    def delete_stream(stream_name)
+      adapter.delete(stream_name)
+      :ok
+    end
 
 
     def stream_event(stream_name)
