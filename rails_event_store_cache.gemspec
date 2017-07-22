@@ -5,7 +5,7 @@ require 'rails_event_store_cache/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "rails_event_store_cache"
-  spec.version       = RailsEventStoreMongoid::VERSION
+  spec.version       = RailsEventStoreStoreCache::VERSION
   spec.authors       = ['gottfrois', 'mpraglowski']
   spec.email         = ['tomek.rybka@gmail.com', 'm@praglowski.com']
 
